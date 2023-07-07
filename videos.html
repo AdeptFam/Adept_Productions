@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href ="lightbox.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stalinist+One&display=swap" rel="stylesheet">
+
+    <title>Videos</title>
+    <style>
+        body {
+            background-image: url("/Users/jaimeorona/Documents/VSCode/Ad3PT/images/adept grid 03.JPG");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .center {
+            text-align: center;
+            font-family: 'Stalinist One', cursive;
+            font-size: 80px;
+            color: white;
+        }
+        p {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 40px;
+            text-align: center;
+            color: black;
+        }
+
+        .container {
+            background-image: url("/Users/jaimeorona/Documents/VSCode/Ad3PT/images/adept grid 03.JPG");
+            position: relative;
+            min-height: 100vh;
+        }
+
+        .container .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .container .video-container .video {
+           height: 250px;
+           width: 350px;
+           border: 5px solid #fff;
+           border-radius: 5px;
+           box-shadow: 0 5px 15px rgba(0, 0, 0, 7);
+           cursor: pointer;
+           overflow: hidden;
+        }
+        .container .video-container .video video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: .2s linear;
+        }
+        .container .video-container .video:hover video {
+            transform: scale(1.1);
+        }
+        .container .popup-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: rgba(255, 254, 254, 0.837);
+            height: 100%;
+            width: 100%;
+            display: none;
+        }
+        .container .popup-video video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 750px;
+            border-radius: 5px;
+            border: 3px solid #fff;
+            object-fit: cover;
+        }
+
+        .container .popup-video span {
+            position: absolute;
+            top: 5px;
+            right: 20px;
+            font-size: 50px;
+            color: #fff;
+            font-weight: bolder;
+            z-index: 100;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container .popup-video video {
+                width: 95%;
+            }
+        }
+        .text {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+
+     </style>
+</head>
+<body>
+
+    <h1 class="center">Video Gallery</h1>
+
+    <p>Videos Below Are Projects That I Have Created For Clients That Have Been Published On Their Websites, Social Media Sites and Commercials Clips. Please Click On Videos</p>
+
+    <div class="container">
+    <div class="video-container">
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Keepin It Hood.mp4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/BMW M4 Teaser.mp4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Meet The Legends.mp4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Formula Drift.Mp4" muted autoplay loop ></video>
+        </div>
+
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Prestige 2021 Cadillac Escalade .mp4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Prestige G Wagon V2 .mp4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Prestige (Directors Cut).mp4" muted autoplay loop ></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video>
+        </div>
+
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/DejaVu (Directors Cut).MP4" muted autoplay loop></video>
+        </div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Formula Drift.Mp4" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Keepin It Hood.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige G Wagon V2 .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige 2021 Cadillac Escalade .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Formula Drift.Mp4" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Keepin It Hood.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige G Wagon V2 .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige 2021 Cadillac Escalade .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Formula Drift.Mp4" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Keepin It Hood.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige G Wagon V2 .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige 2021 Cadillac Escalade .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Formula Drift.Mp4" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Keepin It Hood.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige G Wagon V2 .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Prestige 2021 Cadillac Escalade .mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Formula Drift.Mp4" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Keepin It Hood.mov" muted autoplay loop></video></div>
+        <div class="video"><video src="/Users/jaimeorona/Documents/VSCode/Adept_Production/Videos/Japan.mov" muted ></video></div>
+        
+    </div>
+
+    <div class="popup-video">
+        <span>&times;</span>
+        <video src="/Users/jaimeorona/Documents/VSCode/Ad3PT/Videos/Keepin It Hood.mp4" autoplay controls></video>
+    </div>
+    </div>
+    <script>
+        document.querySelectorAll('.video-container video').forEach(vid => {
+            vid.onclick = () => {
+                document.querySelector('.popup-video').style.display = 'block';
+                document.querySelector('.popup-video video').src = vid.getAttribute('src');
+            } 
+        });
+
+        document.querySelector('.popup-video span').onclick = () => {
+                document.querySelector('.popup-video').style.display = 'none';    
+        }
+    </script>
+    
+</body>
+</html>
