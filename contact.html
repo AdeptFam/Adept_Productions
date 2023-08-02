@@ -17,7 +17,10 @@
       font-size: 80px;
     }
     body {
-      background-image: url("images/adept grid 01.jpg");
+      background-image: url("/Volumes/Transcend/VSCode/Ad3PT/images/adept grid 01.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
     }
 
     form {
@@ -44,18 +47,21 @@
     }
 
     input[type="submit"] {
-      background-color: black;
-      color: white;
+      background-color: #2e86ac;
+      color: #f2fe2b;
+      font-weight: bold;
       font-size: 20px;
       padding: 12px 20px;
-      border: none;
+      border: 4px solid #f2fe2b;
       border-radius: 4px;
       cursor: pointer;
       width: 100%;
     }
 
     input[type="submit"]:hover {
-      background-color: #d73619;
+      background-color: #f2fe2b;
+      border: 4px solid #2e86ac;
+      color: #2e86ac;
     }
   </style>
 
@@ -65,7 +71,7 @@
 </head>
 <body>
 
-  <h1>CONTACT US</h1>
+  <h1>"Let's Make Something Awesome Together!"</h1>
  <!-- Use formsubmit.co to receive emails from contact forms -->
   <form action="https://formsubmit.co/jorona03@yahoo.com" method="POST">
   <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
