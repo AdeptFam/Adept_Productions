@@ -14,13 +14,14 @@
       text-align: center;
       font-family: 'Stalinist One', cursive;
       color: black;
-      font-size: 80px;
+      font-size: 60px;
     }
     body {
-      background-image: url("images/adept grid 01.jpg");
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
+        background-image: url("images/Adept_Gold.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        font-family: 'Poppins', sans-serif;
     }
 
     form {
@@ -72,13 +73,14 @@
 <body>
 
   <h1>"Let's Make Something Awesome Together!"</h1>
- <!-- Use formsubmit.co to receive emails from contact forms -->
-  <form action="https://api.web3forms.com/submit" method="POST">
+ <!-- Use formsubmit.co to receive emails from contact forms 
+        I am currently using -->
+  <form action="https://formsubmit.co/jorona03@yahoo.com" method="POST">
   <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
   <input type="text" id="name" name="name" required>
 
   <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
-  <input type="hidden" name="access_key" value="c711306f-cec9-46d3-9ebc-07a930302775">
+  <input type="email" id="email" name="email" required>
 
   <label for="message"><i class="fa-solid fa-message"></i> Message:</label>
   <textarea id="message" name="message" required></textarea>
