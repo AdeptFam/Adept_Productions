@@ -7,39 +7,48 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stalinist+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&display=swap" rel="stylesheet">
+    
 
     <title>Ad3pt_Productions</title>
+    <link rel="stylesheet" href="./style.css" />
+
     <style>
 
-        .center {
-            text-align: center;
-            font-family: 'Stalinist One', cursive;
-            font-size: 80px;
-        }
-    
         body {
             background-color: rgb(255, 255, 255);
-            color: #0ABAB5;
-            font-size: 65px;
+            background-size: 80%;
+            color: black;
+            font-size: 55px;
             text-align: center;
+        }
+        
+        img {
+            
+            width: 50%;
         }
 
         p {
-            font-family: 'Bungee Tint', sans-serif;
-            font-size: 52px;
+            font-family: 'Nerko One', sans-serif;
+            font-size: 55px;
             text-align: center;
             color: black;
         }
 
+        .center {
+            text-align: center;
+            font-family: 'Nerko One', serif;
+            font-weight: bold;
+            font-style: normal;
+        }
+       
         .gallery-button {
             display: inline-block;
             font-size: medium;
             font-weight: bold;
             padding: 15px 25px;
             background-color: black;
-            color: #0ABAB5;
+            color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 8px;
@@ -49,7 +58,7 @@
 
         .gallery-button:hover {
             font-weight: bold;
-            background-color: #0ABAB5;
+            background-color: hotpink;
             color: black;
         }
 
@@ -73,13 +82,33 @@
             color: black;
         }
 
+        .price-button {
+            display: inline-block;
+            font-size: medium;
+            font-weight: bold;
+            padding: 15px 14px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .price-button:hover {
+            font-weight: bold;
+            background-color: hotpink;
+            color: black;
+        }
+
         .contact-button {
             display: inline-block;
             font-size: medium;
             font-weight: bold;
             padding: 15px 14px;
             background-color: black;
-            color: #0ABAB5;
+            color: white;
             text-align: center;
             text-decoration: none;
             border-radius: 8px;
@@ -89,43 +118,67 @@
 
         .contact-button:hover {
             font-weight: bold;
-            background-color: #0ABAB5;
+            background-color: hotpink;
             color: black;
         }
         
         .social-icon {
             color: black;
+            font-size: 100px;
             cursor: pointer;
             text-decoration: none;
             margin: 0 5px;
         }
         .social-icon:hover {
-            color: #d73619;
+            color: hotpink;
         }
     
 
     </style>
 </head>
 <body>
-    
-    <h1 class="center">AD3PT PRODUCTIONS</h1>
+    <img src="images/Adept.jpg">
+    <!-- 
+    <h1 class="center">PRODUCTIONS</h1> -->
+
+    <div class="slide">
+        <div class="slide-wrapper">
+          <img src="images/Adept_Front_Logo.jpg" />
+          <img src="images/Pismo/Pismo24.jpg" />
+          <img src="images/Pismo/Pismo241.jpg" />
+          <img src="images/Jameson.jpg" />
+          <img src="images/AdamNY.jpg" />
+          <img src="images/Pismo/Pismo242.jpg" />
+          <img src="images/RiskRollingStones.jpg" />
+          <img src="images/Pismo/Pismo243.jpg" />
+        </div>
+
+        <div class="slide-wrapper">
+            <img src="images/Adept_Front_Logo.jpg" />
+            <img src="images/Pismo/Pismo24.jpg" />
+            <img src="images/Pismo/Pismo241.jpg" />
+            <img src="images/Jameson.jpg" />
+            <img src="images/AdamNY.jpg" />
+            <img src="images/Pismo/Pismo242.jpg" />
+            <img src="images/RiskRollingStones.jpg" />
+            <img src="images/Pismo/Pismo243.jpg" />
+          </div>
+      </div>
     
     <header>
 
-        <img src="images/THE FAMILY BUSINESS.jpg" alt="The Family Business" width="1000" height="800">
-
         <ul>
-            <button class="gallery-button" onclick="location.href='gallery.html'">Photo Gallery</button>
+            <button class="gallery-button" onclick="location.href='photo_gallery.html'">Photo Gallery</button>
             <!--
             <button class="videos-button" onclick="location.href='videos.html'">Videos</button> -->
-            <button class="videos-button" onclick="location.href='videos.html'">Prices</button>
+            <button class="price-button" onclick="location.href='price.html'">Prices</button>
             <button class="contact-button" onclick="location.href='contact.html'">Contact Me</button>
         </ul>
     </header>
-
-    <p>"Creative Professional Freelance Photographer/Videographer, No Project Is Too Big or Too Small, I Do It All!"</p>
+    <br>
+    <p>"Creative Professional Freelance Photographer/Videographer, No Project Is Too Big or Too Small, I Can Do It All!"</p>
     
-
+    <br>
     <!-- Used icons from fontawesome.com-->
 
     <a class="social-icon" href="http://instagram.com/ad3pt_entertainment" target="_blank">
