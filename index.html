@@ -86,7 +86,7 @@
             display: inline-block;
             font-size: medium;
             font-weight: bold;
-            padding: 15px 14px;
+            padding: 15px 35px;
             background-color: black;
             color: white;
             text-align: center;
@@ -123,18 +123,26 @@
         }
         
         .social-icon {
+            background: linear-gradient(#405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
             color: black;
             font-size: 100px;
             cursor: pointer;
             text-decoration: none;
             margin: 0 5px;
+            border-radius: 25px;
         }
         .social-icon:hover {
-            color: hotpink;
+            color: white;
+        }
+
+        h2 {
+            font-size: 25px;
         }
     
-
     </style>
+
+    <script src="https://kit.fontawesome.com/67556f604b.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <img src="images/Adept.jpg">
@@ -168,8 +176,9 @@
     <header>
 
         <ul>
-            <button class="gallery-button" onclick="location.href='photo_gallery.html'">Photo Gallery</button>
             <!--
+            <button class="gallery-button" onclick="location.href='photo_gallery.html'">Photo Gallery</button>
+            
             <button class="videos-button" onclick="location.href='videos.html'">Videos</button> -->
             <button class="price-button" onclick="location.href='price.html'">Prices</button>
             <button class="contact-button" onclick="location.href='contact.html'">Contact Me</button>
@@ -195,6 +204,12 @@
     <!-- FOR CSS COMMENTS, USE /* ADD COMMENT */-->
 
     <p>"If A Picture Is Worth A Thousand Words, Imagine What I Can Do!"</p>
+
+    <h2>
+        <i class="fa-solid fa-envelope"></i> Email Address: jorona@gmail.com 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa-solid fa-phone"></i> Phone Number: (661)370-5757
+    </h2>
 
 </body>
 </html>
