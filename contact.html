@@ -2,152 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Stalinist+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nerko+One&family=Rubik+Vinyl&display=swap" rel="stylesheet">
 
-    <title>Contact Me</title>
+    <title>contact</title>
+
+  <style>
+
+    h1 {
+      text-align: center;
+      font-family: "Rubik Vinyl", system-ui;
+      color: black;
+      font-size: 80px;
+    }
+
+    body {
+      background-image: url("images/Adept_Green.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    label {
+      margin-top: 10px;
+      font-size: 30px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 3px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    
+    input[type="phone"],
+    input[type="subject"] {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 3px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      width: 100%;
+    }
+
+
+    
+    textarea {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 3px solid black;
+      border-radius: 8px;
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 15vh;
+      
+    }
+
+    input[type="submit"] {
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 12px 20px;
+      border: 4px solid black;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: hotpink;
+      border: 4px solid black;
+      color: white;
+    }
+  </style>
+
+<script src="https://kit.fontawesome.com/67556f604b.js" crossorigin="anonymous"></script>
+
 
 </head>
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    
-    body{
-        background-image: url("images/Adept_Gold.jpg");
-        font-family: 'Poppins', sans-serif;
-        background-color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    h2{
-        font-size: 60px;
-        color: #ededed;
-        text-align: center;
-    }
-
-    .contact {
-        width: 600px;
-        text-align: center;
-    }
-
-    .input-box {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .input-box .input-field {
-        width: 48.5%;
-    }
-
-    .field .item {
-        width: 100%;
-        padding: 18px;
-        background: transparent;
-        border: 2px solid #0ef;
-        outline: none;
-        border-radius: 6px;
-        font-size: 16px;
-        color: #ededed;
-        margin: 12px 0;
-    }
-
-    .field .item::placeholder {
-        color: rgba(255, 255, 255, .3);
-    }
-
-    .field .error-txt {
-        font-size: 14.5px;
-        color: #d93025;
-        text-align: left;
-        margin: -5px 0 10px;
-        display: none;;
-    }
-
-    .textarea-field .item {
-        resize: none;
-    }
-
-    .textarea-field .error-txt {
-        margin-top: -10px;
-        ;
-    }
-
-
-    button {
-        padding: 12px 32px;
-        background: #0ef;
-        border: none;
-        outline: none;
-        border-radius: 6px;
-        box-shadow: 0 0 10px #0ef;
-        font-size: 16px;
-        color: #333;
-        letter-spacing: 1px;
-        font-weight: 600;
-        cursor: pointer;
-        margin-top: 20px;
-        transition: .5s;
-    }
-
-    button:hover {
-        box-shadow: none;
-        background: transparent;
-    }
-
-
-</style>
 <body>
 
-    <h2>Contact Me!</h2>
+  <h1>"Let's Make Something Awesome Together!"</h1>
+ <!-- Use formsubmit.co to receive emails from contact forms -->
 
-    <section class="contact">
-        
-        <form action="https://api.web3forms.com/submit" method="POST">
-            
-            <div class="input-box">
-                <input type="hidden" name="access_key" value="c711306f-cec9-46d3-9ebc-07a930302775">
-                <div class="input-field field">
-                    <input type="text" placeholder="Full Name" id="name" 
-                    class="item" autocomplete="off">
-                    <div class="error-txt">Full Name can't be blank</div>
-                </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Email Address" id="email" 
-                    class="item" autocomplete="off">
-                    <div class="error-txt">Email Address can't be blank</div>
-                </div>
-            </div>
+    <i class="fa-sharp fa-solid fa-file-invoice"></i>
 
-            <div class="input-box">
-                <div class="input-field field">
-                    <input type="text" placeholder="Phone Number" id="phone"
-                    class="item" autocomplete="off">
-                    <div class="error-txt">Phone Number can't be blank</div>
-                </div>
-                <div class="input-field field">
-                    <input type="text" placeholder="Subject" id="subject"
-                    class="item" autocomplete="off">
-                    <div class="error-txt">Subject can't be blank</div>
-                </div>
-            </div>
 
-            <div class="textrea-field field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" 
-                autocomplete="off"></textarea>
-                <div class="error-txt">Message can't be blank</div>
-            </div>
+  <form action="https://api.web3forms.com/submit" method="POST">
 
-            <button type="submit">Send Message</button>
-        
-        </form>
-    </section>
+    <input type="hidden" name="access_key" value="c711306f-cec9-46d3-9ebc-07a930302775">
+
+    <label for="name"><i class="fa-solid fa-user"></i> Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email"><i class="fa-duotone fa-solid fa-phone"></i> Phone Number:</label>
+    <input type="phone" id="phone" name="phone" required>
+
+    <label for="email"><i class="fa-solid fa-envelope"></i> Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject"><i class="fa-solid fa-pencil"></i> Subject:</label>
+    <input type="subject" id="subject" name="subject" required>
+
+    <label for="message"><i class="fa-solid fa-message"></i> Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <input type="submit" value="Send">
+  
+  </form>
+
     
+
 </body>
 </html>
