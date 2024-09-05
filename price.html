@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Racing+Sans+One&family=Rampart+One&display=swap" rel="stylesheet">
+
+    <title>Price</title>
+
+<style>
+
+    body{
+        background-image: url("images/Adept_Grey.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        
+        font-size: 18px;
+        
+    }
+
+    *{
+        font-family: "Racing Sans One", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
+
+    .container {
+        width: 100%;
+        min-height: 100vh;
+        background: #5c539d;
+    }
+
+    h2 {
+        font-family: "Carter One", system-ui;
+        color: black;
+        font-size: 75px;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: "Rampart One", sans-serif;
+        color: black;
+        font-size: 48px;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .price-row {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 25px;
+    }
+
+    .price-col {
+        background: #1f283b;
+        padding: 10% 15%;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center
+    }
+
+    .price-col p {
+        font-size: 22px;
+    }
+
+    .price-col h3 {
+        font-size: 44px;
+        margin: 20px 0 40px;
+        font-weight: 500;
+    }
+
+    .price-col h3 span {
+        font-size: 16px;
+    }
+
+    .price-col ul {
+        text-align: left;
+        margin: 20px 0;
+        color: #ddd;
+        list-style: none;
+        
+    }
+    
+    .price-col ul li{
+        margin: 15px 0;
+    }
+
+    .price-col ul li::before{
+        content: '\2022';
+        color: #e33058;
+        font-weight: bold;
+        margin-right: 8px;
+    }
+    
+    .price-col button {
+        width: 100%;
+        padding: 14px 0;
+        outline: none;
+        color: #fff;
+        background: transparent;
+        font-size: 15px;
+        border: 1px solid #fff;
+        border-radius: 6px;
+        margin-top: 30px;
+        cursor: pointer;
+        transition: background 0.5s;
+    }
+    .price-col button:hover {
+        background: #e33058;
+    } 
+        
+</style>
+</head>
+<body>
+    <!-- 
+    <div class="container"> -->
+        <h2>Package Prices</h2>
+
+        <h1>Elite Packages 
+            <br>
+            (Photos + Videos)</h1>
+
+        <div class="price-row">
+            <div class="price-col">
+                <p>Starter Package</p>
+                <h3>$1600 <span>/ includes</span></h3>
+                <ul>
+                    <li>Pictures</li>
+                    <li>Up to 3 Miniute Video</li>
+                    <li>200 Pictures</li>
+                    <li>200 Pictures</li>
+                    <li>Up To 4.5 Hours</li>
+                    <li>1 To 2 Locations</li>
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <div class="price-col">
+                <p>All Access Package</p>
+                <h3>$2200 <span>/ includes</span></h3>
+                <ul>
+                    <li>Pictures</li>
+                    <li>Highlights Of Event Pictures</li>
+                    <li>Videos</li>
+                    <li>2:00 Social Media Video</li>
+                    <li>Highlight Of Event Video</li>
+                    <li>Up to 10 Hours</li>
+                    <li>Up to 3 Locations</li>
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <!--
+            <div class="price-col">
+                <p>Gold</p>
+                <h3>$1200 <span>/ Per Event</span></h3>
+                <ul>
+                    <li>200 Pictures</li>
+                    <li>5 Miniute Video</li>
+                    <li>200 Pictures</li>
+                    <li>200 Pictures</li>
+                    <li>200 Pictures</li>
+                    <li>Up to 8 Hours Per Event</li>
+                </ul>
+                <button>Add To Cart</button> -->
+            </div>
+        </div>
+
+        <h1>Photo's Only</h1>
+
+        <div class="price-row">
+            <div class="price-col">
+                <p>Basic</p>
+                <h3>$200 <span>/ includes</span></h3>
+                <ul>
+                    <li>5 Edited Photos</li>
+                    <li>1 Hour Session</li>
+                    <li>1 Location</li>
+                    <br>
+                    <h4>*** Additional Services ***</h4>
+                    <li>Extra Photos - $20/Per Photo</li>
+                    <li>Extra Hour Session - $50/Per Hour</li>
+                    <li>Extra Location - $30/Per Location</li>
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <div class="price-col">
+                <p>Standard</p>
+                <h3>$350 <span>/ includes</span></h3>
+                <ul>
+                    <li>8-10 Edited Photos</li>
+                    <li>1-3 Hour Session</li>
+                    <li>2 Locations</li>
+                    <br>
+                    <h4>*** Additional Services ***</h4>
+                    <li>Extra Photos - $20/Per Photo</li>
+                    <li>Extra Hour Session - $50/Per Hour</li>
+                    <li>Extra Location - $30/Per Location</li>
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <div class="price-col">
+                <p>Premium</p>
+                <h3>$500 <span>/ includes</span></h3>
+                <ul>
+                    <li>All Picked Photos Edited</li>
+                    <li>Up to 6 Hour Session</li>
+                    <li>Up to 4 Locations</li>
+                    <br>
+                    <h4>*** Additional Services ***</h4>
+                    <li>Extra Hour Session - $50/Per Hour</li>
+                    <li>Extra Location - $30/Per Location</li>
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+        </div>
+        <h1>Video's Only</h1>
+
+        <div class="price-row">
+            <div class="price-col">
+                <p>Basic Reel Package</p>
+                <h3>$300 <span>/ includes</span></h3>
+                <ul>
+                    <li>00:10-00:45 Reel Video</li>
+                    <li>1 to 2 Hour Shoot</li>
+                    <li>2 Re-Edits</li>
+                    
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <div class="price-col">
+                <p>Standard Reel Package</p>
+                <h3>$500 <span>/ includes</span></h3>
+                <ul>
+                    <li>(2) 00:10-00:45 Reel Video</li>
+                    <li>Up To 4 Hour Video Shoot</li>
+                    <li>3 Re-Edits</li>
+                
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+            <div class="price-col">
+                <p>Premium Reel Package</p>
+                <h3>$800 <span>/ includes</span></h3>
+                <ul>
+                    <li>(3) 00:10-00:45 Reel Video</li>
+                    <li>Up To 6 Hour Video Shoot</li>
+                    <li>3 Re-Edits</li>
+                    <li>Bonus: 00:10-00:15 Teaser Video</li>
+                    
+                </ul>
+                <!--
+                <button>Add To Cart</button> -->
+            </div>
+
+    </div> 
+    
+</body>
+</html>
