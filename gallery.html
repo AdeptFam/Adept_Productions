@@ -236,6 +236,10 @@
       <img src="images/gallery/HBM2025/HMB4.jpg" alt="Event 6">
       <h3>Happy 40th Birthday Monchie</h3>
     </div>
+    <div class="event-thumbnail" onclick="openPortfolio('event7')">
+      <img src="images/gallery/HBM2025/HMB4.jpg" alt="Event 7">
+      <h3>Alyssa's Sweet 16</h3>
+    </div>
   </div>
   
   <!-- Modal -->
@@ -359,6 +363,25 @@
           </div>
           <button class="carousel-nav right" onclick="moveSlide(1)">❯</button>
           <div class="carousel-dots" id="carousel-dots-6"></div>
+        </div>
+      </div>
+
+      <!-- Event 7 -->
+       <div id="event7" class="portfolio-item hidden">
+        <h2>Alyssa's Sweet 16</h2>
+        <div class="carousel-container" ontouchstart="startTouch(event)" ontouchend="endTouch(event)">
+          <button class="carousel-nav left" onclick="moveSlide(-1)">❮</button>
+          <div class="carousel-track" id="carousel-track-7">
+            <div class="carousel-item">
+              <video autoplay muted loop playsinline>
+                <source src="images/gallery/HBM2025/HBMonchieGolf.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="carousel-item"><img src="images/gallery/HBM2025/HBM1.jpg"></div>
+            <div class="carousel-item"><img src="images/gallery/HBM2025/HMB4.jpg"></div>
+          </div>
+          <button class="carousel-nav right" onclick="moveSlide(1)">❯</button>
+          <div class="carousel-dots" id="carousel-dots-7"></div>
         </div>
       </div>
      
